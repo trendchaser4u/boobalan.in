@@ -93,7 +93,7 @@ module.exports = {
         'Removes the build folder.',
       ),
       default: pub(
-        'nps build.clean && concurrently "nps css.build" "nps js.build" "nps hugo.build" "nps svg.build" "nps copy.watchFonts" "nps copy.watchImages" && nps sw',
+        'nps build.clean && concurrently "nps css.build" "nps js.build" "nps hugo.build" "nps svg.build" "nps copy.fonts" "nps copy.images" && nps sw',
         'Builds a production version of all assets and a service worker.',
       ),
     },
