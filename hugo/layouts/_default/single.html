@@ -1,3 +1,4 @@
 {{ define "main" }}
-<main>{{ .Content }}</main>
+{{ .Content }}
+{{ partial "site-subscribe.html" . }}
 {{ end }}

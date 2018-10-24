@@ -3,6 +3,7 @@
 <html class="no-js" lang="{{ .Site.LanguageCode }}">
 
 <head>
+  <base href="/" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,31 +13,29 @@
   <link rel="manifest" href="{{ "/manifest.json" | relURL }}">
   <meta name="application-name" content="{{ $title }}">
   <meta name="theme-color" content="#2271ff">
-
   {{ if .RSSLink }}
   <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
   <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
   {{ end }}
-
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
   <link rel="stylesheet" href="{{ "static/css/main.css" | relURL }}">
   <script defer src="{{ "static/js/main.bundle.js" | relURL }}"></script>
 </head>
 
 <body>
   {{block "nav" .}}
-    {{partial "site-nav.html" .}}
+  {{partial "site-nav.html" .}}
   {{end}}
   <div id="colorlib-page">
     {{ block "header" . }}
-      {{partial "site-header.html" .}}
+    {{partial "site-header.html" .}}
     {{ end }}
 
     {{ block "main" . }}
-
     {{ end }}
 
     {{ block "footer" . }}
-      {{partial "site-footer.html" .}}
+    {{partial "site-footer.html" .}}
     {{ end }}
   </div>
 </body>
