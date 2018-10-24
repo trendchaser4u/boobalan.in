@@ -2,13 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Boobalan - Full stack web developer from India</title>
-    <link>./</link>
+    <link>http://localhost:3000/</link>
     <description>Recent content on Boobalan - Full stack web developer from India</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 24 Oct 2018 15:06:59 +0530</lastBuildDate>
     
-	<atom:link href="./index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:3000/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Works</title>
+      <link>http://localhost:3000/works/</link>
+      <pubDate>Wed, 24 Oct 2018 15:06:59 +0530</pubDate>
+      
+      <guid>http://localhost:3000/works/</guid>
+      <description>My Works       Digital Product Design, UI/UX
+Race template Mobile Application A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.
+Case Study
+            Digital Product Design, UI/UX
+Race template Mobile Application A small river named Duden flows by their place and supplies it with the necessary regelialia.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:3000/contact/</link>
+      <pubDate>Wed, 24 Oct 2018 14:58:44 +0530</pubDate>
+      
+      <guid>http://localhost:3000/contact/</guid>
+      <description>Contact   My Address 88 West 21th Street, Suite 721 New York NY 10016 + 1235 2355 98 info@yoursite.com www.yoursite.com                  </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:3000/about/</link>
+      <pubDate>Wed, 24 Oct 2018 13:26:56 +0530</pubDate>
+      
+      <guid>http://localhost:3000/about/</guid>
+      <description>About    I’m Martin, a Developer, Digital Product Designer &amp;amp; Art Director based in Berlin.    When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</description>
+    </item>
+    
+    <item>
+      <title>Services</title>
+      <link>http://localhost:3000/services/</link>
+      <pubDate>Wed, 24 Oct 2018 13:26:44 +0530</pubDate>
+      
+      <guid>http://localhost:3000/services/</guid>
+      <description>What I Do Strategy, design and a bit of magic     Explore Design Sprints Product Strategy UX Strategy      Create Information UX/UI Design Branding      Learn Prototyping User Testing UI Testing       </description>
+    </item>
+    
+    <item>
+      <title>Work</title>
+      <link>http://localhost:3000/work/</link>
+      <pubDate>Wed, 24 Oct 2018 13:26:28 +0530</pubDate>
+      
+      <guid>http://localhost:3000/work/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
