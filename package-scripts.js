@@ -22,8 +22,8 @@ const rel = to => join(process.cwd(), to);
 
 const copyTasks = (src, dest) => {
   return {
-    fonts: `rm -r ${join(dest, 'static/fonts')};mkdir -p ${join(dest, 'static/fonts')} && cp -R ${join(src, 'fonts')} ${join(dest, 'static')}`,
-    images: `rm -r ${join(dest, 'static/images')};mkdir -p ${join(dest, 'static/images')} && cp -R ${join(src, 'images')} ${join(dest, 'static')}`,
+    fonts: `rm -rf ${join(dest, 'static/fonts')};mkdir -p ${join(dest, 'static/fonts')} && cp -R ${join(src, 'fonts')} ${join(dest, 'static')}`,
+    images: `rm -rf ${join(dest, 'static/images')};mkdir -p ${join(dest, 'static/images')} && cp -R ${join(src, 'images')} ${join(dest, 'static')}`,
     watchFonts: priv(watch('nps copy.fonts', join(src, 'fonts'))),
     watchImages: priv(watch('nps copy.images', join(src, 'images')))
   }
