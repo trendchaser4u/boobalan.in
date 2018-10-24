@@ -20,6 +20,15 @@ const pub = (script, description) => ({
 const abs = to => join(__dirname, to);
 const rel = to => join(process.cwd(), to);
 
+const copyTasks = (src, dest) => {
+  return {
+    fonts: `rm -r ${join(dest, 'static/fonts')};mkdir -p ${join(dest, 'static/fonts')} && cp -R ${join(src, 'fonts')} ${join(dest, 'static')}`,
+    images: `rm -r ${join(dest, 'static/images')};mkdir -p ${join(dest, 'static/images')} && cp -R ${join(src, 'images')} ${join(dest, 'static')}`,
+    watchFonts: priv(watch('nps copy.fonts', join(src, 'fonts'))),
+    watchImages: priv(watch('nps copy.images', join(src, 'images')))
+  }
+};
+
 const cssTasks = (src, dest) => {
   const getTask = (isProd) => {
     const plugins = 'autoprefixer postcss-import';
@@ -74,21 +83,22 @@ module.exports = {
     browserSync: priv(`browser-sync start --config "${abs('bs-config.js')}"`),
     sw: priv(`workbox copyLibraries ${relDest} && cp ${join(relSrc, 'sw.js')} ${join(relDest)}`),
     css: cssTasks(join(relSrc, 'css'), join(relDest, 'static/css')),
+    copy: copyTasks(relSrc, relDest),
     hugo: hugoTasks(rel('hugo'), relDest),
     js: jsTasks(join(relSrc, 'js')),
-    svg: svgTasks(join(relSrc, 'img'), join(relDest, 'static/svg')),
+    svg: svgTasks(join(relSrc, 'svg'), join(relDest, 'static/svg')),
     build: {
       clean: pub(
         `rimraf ${relDest}`,
         'Removes the build folder.',
       ),
       default: pub(
-        'nps build.clean && concurrently "nps css.build" "nps js.build" "nps hugo.build" "nps svg.build" && nps sw',
+        'nps build.clean && concurrently "nps css.build" "nps js.build" "nps hugo.build" "nps svg.build" "nps copy.watchFonts" "nps copy.watchImages" && nps sw',
         'Builds a production version of all assets and a service worker.',
       ),
     },
     start: {
-      dev: priv('nps build.clean && concurrently "nps css.watch" "nps js.watch" "nps hugo.watch" "nps svg.watch" "nps browser-sync"'),
+      dev: priv('nps build.clean && concurrently "nps css.watch" "nps js.watch" "nps hugo.watch" "nps svg.watch" "nps copy.watchFonts" "nps copy.watchImages" "nps browser-sync"'),
       staging: pub(
         'cross-env NODE_ENV=staging nps start.dev',
         'Starts a dev-server with production versions of all assets (but no service-worker)',

@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const env = process.env.NODE_ENV;
 
@@ -27,4 +28,11 @@ module.exports = {
   target: 'web',
   stats: 'normal',
   watch: !optimizeBuild,
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
+  ]
 };

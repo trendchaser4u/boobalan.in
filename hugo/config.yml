@@ -1,7 +1,7 @@
 ---
 # Site
-baseurl: "https://blaupause.felics.me"
-title: "Blaupause"
+baseurl: "."
+title: "Boobalan - Full stack web developer from India"
 enableRobotsTXT: true
 googleAnalytics: ""
 # Content
