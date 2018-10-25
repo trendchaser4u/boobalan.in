@@ -11,3 +11,8 @@
 .word-wrap {
   word-wrap: break-word;
 }
+
+.colorlib-about,
+.colorlib-services {
+  padding-bottom: 0;
+}

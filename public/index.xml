@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Boobalan - Full stack web developer from India</title>
+    <title>Home on Boobalan - Full stack web developer from India</title>
     <link>http://localhost:3000/</link>
-    <description>Recent content on Boobalan - Full stack web developer from India</description>
+    <description>Recent content in Home on Boobalan - Full stack web developer from India</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Oct 2018 15:06:59 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 24 Oct 2018 13:26:56 +0530</lastBuildDate>
     
 	<atom:link href="http://localhost:3000/index.xml" rel="self" type="application/rss+xml" />
     
@@ -48,7 +48,7 @@ Race template Mobile Application A small river named Duden flows by their place 
       <pubDate>Wed, 24 Oct 2018 13:26:44 +0530</pubDate>
       
       <guid>http://localhost:3000/services/</guid>
-      <description>What I Do Strategy, design and a bit of magic     Explore Design Sprints Product Strategy UX Strategy      Create Information UX/UI Design Branding      Learn Prototyping User Testing UI Testing       </description>
+      <description>What I Do IT Consulting, Developing and a bit of magic     IT Consulting UI/UX Strategy IT Implementation Business Integration      Tech. Teaching UI/UX designs Front end programming Back end programming      Apps Developing Mobile apps JAMstack apps Full Stack apps     Background  2018 I quit my job at Pearson. I made the decision to move on after being 3+ years a software engineer at different startups and MNC.</description>
     </item>
     
     <item>
