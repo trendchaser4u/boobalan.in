@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Boobalan - Full stack web developer from India</title>
-    <link>http://localhost:3000/</link>
+    <link>./</link>
     <description>Recent content in Home on Boobalan - Full stack web developer from India</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Oct 2018 13:26:56 +0530</lastBuildDate>
     
-	<atom:link href="http://localhost:3000/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="./index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Works</title>
-      <link>http://localhost:3000/works/</link>
+      <link>./works/</link>
       <pubDate>Wed, 24 Oct 2018 15:06:59 +0530</pubDate>
       
-      <guid>http://localhost:3000/works/</guid>
+      <guid>./works/</guid>
       <description>My Works       Digital Product Design, UI/UX
 Race template Mobile Application A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.
 Case Study
@@ -26,37 +26,37 @@ Race template Mobile Application A small river named Duden flows by their place 
     
     <item>
       <title>Contact</title>
-      <link>http://localhost:3000/contact/</link>
+      <link>./contact/</link>
       <pubDate>Wed, 24 Oct 2018 14:58:44 +0530</pubDate>
       
-      <guid>http://localhost:3000/contact/</guid>
+      <guid>./contact/</guid>
       <description>Contact   My Address Chennai, Tamil Nadu, India. (+91) 955 105 6493 boobalan.muthukumaran@gmail.com                  </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://localhost:3000/about/</link>
+      <link>./about/</link>
       <pubDate>Wed, 24 Oct 2018 13:26:56 +0530</pubDate>
       
-      <guid>http://localhost:3000/about/</guid>
+      <guid>./about/</guid>
       <description>About Me    I’m Boobalan, a Web Developer, IT Consultant &amp;amp; Tech. Teacher based in India.     Allo, I am an indian software engineer from Chennai but working remotely most of the time. First of all, thank you for visiting me here. It’s such a pleasure to have you here!.  A couple of words about my academic and professional life: I graduated from university with a Bachelor of Technology in IT in 2014.</description>
     </item>
     
     <item>
       <title>Services</title>
-      <link>http://localhost:3000/services/</link>
+      <link>./services/</link>
       <pubDate>Wed, 24 Oct 2018 13:26:44 +0530</pubDate>
       
-      <guid>http://localhost:3000/services/</guid>
+      <guid>./services/</guid>
       <description>What I Do IT Consulting, Developing and a bit of magic     IT Consulting UI/UX Strategy IT Implementation Business Integration      Tech. Teaching UI/UX designs Front end programming Back end programming      Apps Developing Mobile apps JAMstack apps Full Stack apps     Background  2018 I quit my job at Pearson. I made the decision to move on after being 3+ years a software engineer at different startups and MNC.</description>
     </item>
     
     <item>
       <title>Work</title>
-      <link>http://localhost:3000/work/</link>
+      <link>./work/</link>
       <pubDate>Wed, 24 Oct 2018 13:26:28 +0530</pubDate>
       
-      <guid>http://localhost:3000/work/</guid>
+      <guid>./work/</guid>
       <description></description>
     </item>
     
