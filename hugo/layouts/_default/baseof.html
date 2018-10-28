@@ -55,7 +55,6 @@
     <link rel="manifest" href="{{ "/manifest.json" | relURL }}">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="{{ "static/css/main.css" | relURL }}">
-    <script defer src="{{ "static/js/main.bundle.js" | relURL }}"></script>
     {{ if .RSSLink }}
     <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
     <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
@@ -76,28 +75,6 @@
         {{partial "site-footer.html" .}}
         {{ end }}
     </div>
-    <script type="application/ld+json">
-    {
-        "@context": "http://schema.org/",
-        "@type": "Person",
-        "name": "Boobalan",
-        "url": "https://boobalan.in",
-        "image": "https://boobalan.in/static/images/boobalan.jpeg",
-        "sameAs": [
-            "facebook.com/trendchaser4u",
-            "https://twitter.com/trendchaser4u",
-            "https://plus.google.com/+BoobalanM4u",
-            "https://instagram.com/_d0g_backwards",
-            "http://in.linkedin.com/in/boobalanm",
-            "https://github.com/trendchaser4u"
-        ],
-        "jobTitle": "Web Developer, Freelancer, Consultant",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "PeekPost"
-        }
-    }
-    </script>
 </body>
 
 </html>

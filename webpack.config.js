@@ -28,11 +28,11 @@ module.exports = {
   target: 'web',
   stats: 'normal',
   watch: !optimizeBuild,
-  plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
-    }),
-  ]
+  // plugins: [
+  //   new webpack.ProvidePlugin({
+  //     $: 'jquery',
+  //     jQuery: 'jquery',
+  //     'window.jQuery': 'jquery'
+  //   }),
+  // ]
 };

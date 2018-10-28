@@ -2,13 +2,13 @@
  * main.js
  * Entrypoint for webpack
  */
-import 'bootstrap';
-require('imports-loader?!./lib/jquery.waypoints.min.js');
-require('imports-loader?!./lib/jquery.magnific-popup.min.js');
-require('imports-loader?!./lib/owl.carousel.min.js');
-require('imports-loader?!./lib/jquery.easing.1.3.js');
-require('imports-loader?this=>window!./lib/modernizr-2.6.2.min.js');
-require('imports-loader?this=>window!./lib/respond.min.js');
+// import 'bootstrap';
+// require('imports-loader?!./lib/jquery.waypoints.min.js');
+// require('imports-loader?!./lib/jquery.magnific-popup.min.js');
+// require('imports-loader?!./lib/owl.carousel.min.js');
+// require('imports-loader?!./lib/jquery.easing.1.3.js');
+// require('imports-loader?this=>window!./lib/modernizr-2.6.2.min.js');
+// require('imports-loader?this=>window!./lib/respond.min.js');
 
 import ready from './utils/ready';
 import registerServiceWorker from './utils/serviceWorker';
