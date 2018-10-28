@@ -1,44 +1,103 @@
 {{ $title := delimit (slice .Title "&middot;" .Site.Title) " " }}
 <!doctype html>
-<html class="no-js" lang="{{ .Site.LanguageCode }}">
+<html class="no-js" lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns#">
 
 <head>
-  <base href="/" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ $title }}</title>
-  <meta name="description" content="{{ .Description }}">
-  <link rel="canonical" href="{{ .Permalink }}">
-  <link rel="manifest" href="{{ "/manifest.json" | relURL }}">
-  <meta name="application-name" content="{{ $title }}">
-  <meta name="theme-color" content="#2271ff">
-  {{ if .RSSLink }}
-  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
-  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
-  {{ end }}
-  <link rel="shortcut icon" href="{{"static/images/favicon.ico"|relURL}}">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "static/css/main.css" | relURL }}">
-  <script defer src="{{ "static/js/main.bundle.js" | relURL }}"></script>
+    <title>{{ $title }}</title>
+    <base href="/" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="boobalan, developer, developers in chennai, mobile developers, mobile developer, web developer, software, freelancers, freelancer, consultants">
+    <meta name="description" content="I am an indian software engineer from Chennai but working remotely most of the time.">
+    <meta name="application-name" content="{{ $title }}">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@trendchaser4u" />
+    <meta name="twitter:title" content="Boobalan - Full stack web developer from india." />
+    <meta name="twitter:description" content="I am an indian software engineer from Chennai but working remotely most of the time." />
+    <meta name="twitter:image:src" content="{{ "static/images/boobalan.jpeg" | relURL }}" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Boobalan - Full stack web developer from india." />
+    <meta property="og:description" content="I am an indian software engineer from Chennai but working remotely most of the time." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="{{ "static/images/boobalan.jpeg" | relURL }}" />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:width" content="318" />
+    <meta property="og:image:height" content="242" />
+    <meta property="og:image:alt" content="Boobalan Muthukumaran" />
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Boobalan - Full stack web developer from india." />
+    <meta itemprop="image" content="{{ "static/images/boobalan.jpeg" | relURL }}" />
+    <meta itemprop="description" content="I am an indian software engineer from Chennai but working remotely most of the time." />
+    <meta name="msapplication-TileImage" content="{{"static/images/fav/ms-icon-144x144.png"|relURL}}">
+    <meta name="msapplication-TileColor" content="#ffdd00">
+    <meta name="theme-color" content="#ffdd00">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="alternate" href="{{ .Permalink }}" hreflang="en">
+    <link rel="shortcut icon" href="{{"static/images/fav/favicon.ico"|relURL}}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ "static/images/fav/apple-icon-57x57.png" | relURL }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ "static/images/fav/apple-icon-60x60.png" | relURL }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ "static/images/fav/apple-icon-72x72.png" | relURL }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ "static/images/fav/apple-icon-76x76.png" | relURL }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ "static/images/fav/apple-icon-114x114.png" | relURL }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ "static/images/fav/apple-icon-120x120.png" | relURL }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ "static/images/fav/apple-icon-144x144.png" | relURL }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ "static/images/fav/apple-icon-152x152.png" | relURL }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "static/images/fav/apple-icon-180x180.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ "static/images/fav/android-icon-192x192.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "static/images/fav/favicon-32x32.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ "static/images/fav/favicon-96x96.png" | relURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "static/images/fav/favicon-16x16.png" | relURL }}">
+    <link rel="manifest" href="{{ "/manifest.json" | relURL }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "static/css/main.css" | relURL }}">
+    <script defer src="{{ "static/js/main.bundle.js" | relURL }}"></script>
+    {{ if .RSSLink }}
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ $title }}" />
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ $title }}" />
+    {{ end }}
 </head>
 
 <body>
-  {{block "nav" .}}
-  {{partial "site-nav.html" .}}
-  {{end}}
-  <div id="colorlib-page">
-    {{ block "header" . }}
-    {{partial "site-header.html" .}}
-    {{ end }}
-
-    {{ block "main" . }}
-    {{ end }}
-
-    {{ block "footer" . }}
-    {{partial "site-footer.html" .}}
-    {{ end }}
-  </div>
+    {{block "nav" .}}
+    {{partial "site-nav.html" .}}
+    {{end}}
+    <div id="colorlib-page">
+        {{ block "header" . }}
+        {{partial "site-header.html" .}}
+        {{ end }}
+        {{ block "main" . }}
+        {{ end }}
+        {{ block "footer" . }}
+        {{partial "site-footer.html" .}}
+        {{ end }}
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Boobalan",
+        "url": "https://boobalan.in",
+        "image": "https://boobalan.in/static/images/boobalan.jpeg",
+        "sameAs": [
+            "facebook.com/trendchaser4u",
+            "https://twitter.com/trendchaser4u",
+            "https://plus.google.com/+BoobalanM4u",
+            "https://instagram.com/_d0g_backwards",
+            "http://in.linkedin.com/in/boobalanm",
+            "https://github.com/trendchaser4u"
+        ],
+        "jobTitle": "Web Developer, Freelancer, Consultant",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "PeekPost"
+        }
+    }
+    </script>
 </body>
 
 </html>
